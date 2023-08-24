@@ -17,7 +17,7 @@
 
 #if (defined(ARDUINO_AVR_UNO) || defined(ESP8266))   // Using a soft serial port
 #include <SoftwareSerial.h>
-SoftwareSerial softSerial(/*rx =*/4, /*tx =*/5);
+SoftwareSerial softSerial(/*rx =*/10, /*tx =*/11);
 #define FPSerial softSerial
 #else
 #define FPSerial Serial1
